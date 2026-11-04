@@ -1,0 +1,30 @@
+name: Aggiorna Source AltStore
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - name: Controlla codice
+      uses: actions/checkout@v4
+
+    - name: Configura Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Esegui aggiornamento
+      run: python updater.py
+
+    - name: Salva modifiche
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add apps.json
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update source" && git push)

@@ -1,0 +1,12 @@
+{
+  "name": "Le Mie App",
+  "subtitle": "Aggiornato automaticamente",
+  "description": "La mia sorgente personalizzata sincronizzata da GitHub.",
+  "iconURL": "https://githubusercontent.com",
+  "website": "https://github.com",
+  "tintColor": "#007AFF",
+  "monitor_repos": [
+    "itzzace/ytkace",
+    "qnblackcat/uYouPlus"
+  ]
+}

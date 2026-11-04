@@ -1,12 +1,13 @@
 {
   "name": "Le Mie App",
   "subtitle": "Aggiornato automaticamente",
-  "description": "La mia sorgente personalizzata sincronizzata da GitHub.",
+  "description": "Sorgente personalizzata con ManicEmu, MelonX e YTKACE.",
   "iconURL": "https://githubusercontent.com",
   "website": "https://github.com",
   "tintColor": "#007AFF",
   "monitor_repos": [
-    "itzzace/ytkace",
-    "qnblackcat/uYouPlus"
+    "Manic-EMU/ManicEMU",
+    "melonx-emu/MeloNX",
+    "itzzace/ytkace"
   ]
 }
